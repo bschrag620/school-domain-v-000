@@ -23,7 +23,7 @@ class School
 
   def sort
     sorted = {}
-    self.roster.each do |grade, students|
+    self.roster.collect do |grade, students|
       sorted[grade] = students.sort
     end
     sorted
