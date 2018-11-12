@@ -18,5 +18,13 @@ class School
   end
 
   def grade(grade)
-    
+    self.roster[grade]
+  end
+
+  def sort
+    self.roster.collect do |grade|
+      roster[grade].sort
+    end
+  end
+  
 end
