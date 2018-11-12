@@ -26,7 +26,6 @@ class School
     self.roster.collect do |grade, students|
       sorted[grade] = students.sort
     end
-    sorted
   end
 
 end
